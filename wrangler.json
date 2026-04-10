@@ -6,5 +6,15 @@
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS"
-  }
+  },
+  "routes": [
+    {
+      "pattern": "restaurant-la-bonne-etape.fr/*",
+      "zone_name": "restaurant-la-bonne-etape.fr"
+    },
+    {
+      "pattern": "www.restaurant-la-bonne-etape.fr/*",
+      "zone_name": "restaurant-la-bonne-etape.fr"
+    }
+  ]
 }
