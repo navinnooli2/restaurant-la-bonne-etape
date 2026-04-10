@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /go/
+
+Sitemap: https://restaurant-la-bonne-etape.fr/sitemap.xml

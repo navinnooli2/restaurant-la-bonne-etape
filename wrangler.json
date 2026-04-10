@@ -1,0 +1,10 @@
+{
+  "name": "restaurant-la-bonne-etape",
+  "main": "dist/_worker.js",
+  "compatibility_date": "2025-10-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  }
+}
