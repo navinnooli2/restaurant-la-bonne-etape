@@ -2,7 +2,7 @@
   "name": "restaurant-la-bonne-etape",
   "version": "1.0.0",
   "scripts": {
-    "build": "rm -rf dist && mkdir -p dist && cp index.html dist/ && cp style.css dist/ && cp robots.txt dist/ && cp sitemap.xml dist/ && cp og-image.svg dist/ && cp .assetsignore dist/ && cp dist_worker.js dist/_worker.js",
+    "build": "rm -rf dist && mkdir dist && cp index.html style.css robots.txt sitemap.xml og-image.svg favicon.svg .assetsignore dist/ && cp dist_worker.js dist/_worker.js && cp -r images dist/",
     "deploy": "npx wrangler deploy"
   },
   "devDependencies": {

@@ -209,22 +209,23 @@ main {
   transform: translateY(-2px);
 }
 
-/* Zone 1 : Logo / initiales */
+/* Zone 1 : Logo */
 .casino-tile__logo {
-  width: 100%;
+  width: 200px;
+  min-width: 200px;
   height: 130px;
   border-radius: 16px;
+  overflow: hidden;
+  background: #0a0a1a;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
-.casino-tile__initials {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.casino-tile__logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 /* Zone 2 : Bonus */
@@ -594,6 +595,41 @@ main {
 }
 .sticky-cta span { color: #fff; font-size: .9rem; font-weight: 600; }
 
+/* ── Reviews Grid ── */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+.review-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+.review-stars { color: var(--gold); font-size: 1rem; letter-spacing: 1px; }
+.review-author { font-weight: 700; font-size: 0.9rem; color: var(--text-primary); }
+.review-card p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 0 0.75rem;
+  font-style: italic;
+}
+.review-casino {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
 /* ── Responsive 768px ── */
 @media (max-width: 768px) {
   .nav-desktop { display: none; }
@@ -630,6 +666,7 @@ main {
 
   .payment-list li { flex-direction: column; gap: 0.2rem; }
   .payment-list li strong { min-width: unset; }
+  .reviews-grid { grid-template-columns: 1fr; }
 }
 
 /* ── Responsive 480px ── */
